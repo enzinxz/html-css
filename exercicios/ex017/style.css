@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body {
+  font-family: work sans;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(88, 88, 88),
+    gray,
+    rgb(179, 179, 179),
+    rgb(201, 199, 199),
+    rgb(177, 177, 177),
+    gray,
+    rgb(88, 88, 88)
+  );
+  background-attachment: fixed;
+}
+
+main {
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  padding: 15px;
+  width: 650px;
+  margin: auto;
+  box-shadow: 10px 10px 10px rgb(143, 143, 143);
+  margin-top: 50px;
+  
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 5px 5px 8px rgba(82, 82, 82, 0.671);
+  /* Medidas absolutas
+  cm, mm, in, px, pt, pc
+  
+  Medidas Realtivas
+  em, ex, rem, vw, vh, %
+  geralmente 16px = 1em
+  
+  
+  É bom colocar os link em italico*/
+
+  font-size: 5ex;
+
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+    text-shadow: 5px 5px 8px rgb(97, 97, 97);
+    font-size: 1.2em;
+    text-align: center;
+}

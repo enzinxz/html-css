@@ -1,0 +1,144 @@
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f14;
+color:white;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:40px;
+background:linear-gradient(90deg,#1b102b,#2a1244);
+animation:fade 1s;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+color:#c084fc;
+}
+
+/* MENU */
+
+nav{
+background:#14141c;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+border-bottom:1px solid #2c2c3a;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#c084fc;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px;
+max-width:1000px;
+margin:auto;
+animation:fade 1s;
+}
+
+h2{
+color:#c084fc;
+}
+
+/* BOX SOBRE */
+
+.container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.box{
+background:#181820;
+padding:20px;
+border-radius:10px;
+flex:1;
+box-shadow:0px 5px 15px rgba(0,0,0,0.4);
+}
+
+/* CARDS JOGOS */
+
+.cards{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#181820;
+padding:20px;
+border-radius:10px;
+width:250px;
+transition:0.3s;
+box-shadow:0px 5px 15px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0px 10px 25px rgba(0,0,0,0.6);
+}
+
+/* HABILIDADES */
+
+.skill{
+margin-bottom:20px;
+}
+
+.barra{
+background:#1d1d29;
+height:10px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.barra span{
+display:block;
+height:100%;
+background:#c084fc;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#14141c;
+border-top:1px solid #2c2c3a;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
