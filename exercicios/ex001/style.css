@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+button:hover {
+    background-color: #e2e2e2; /* Green */
+    color: rgb(12, 12, 12);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
