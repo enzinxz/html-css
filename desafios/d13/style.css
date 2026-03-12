@@ -1,0 +1,483 @@
+/* =========================================
+RESET GERAL DO SITE
+Isso remove espaçamentos padrão do navegador
+========================================= */
+
+*{
+    margin:0;              /* remove margem padrão */
+    padding:0;             /* remove espaçamento interno */
+    box-sizing:border-box; /* faz width/height considerar padding e border */
+    scroll-behavior:smooth;/* scroll suave ao clicar em links */
+}
+
+
+/* =========================================
+CONFIGURAÇÃO GLOBAL DO SITE
+========================================= */
+
+body{
+    background: linear-gradient(
+        -45deg,
+        #05010a,
+        #12002b,
+        #1a003d,
+        #05010a
+    );
+
+    background-size: 400% 400%;
+
+    animation: gradientBG 12s ease infinite;
+
+    color:white;
+
+    font-family:'Orbitron', sans-serif;
+}
+
+/* =========================================
+BARRA DE PROGRESSO DO TOPO
+========================================= */
+
+.scroll-bar{
+
+    position:fixed; /* fica fixo na tela */
+
+    top:0;          /* encostado no topo */
+
+    left:0;         /* começa na esquerda */
+
+    height:4px;     /* altura da barra */
+
+    width:100%;     /* largura total da tela */
+
+    background:linear-gradient(90deg,#7b2cff,#c084ff);
+    /* gradiente roxo neon */
+
+    z-index:2000;   /* fica acima de tudo */
+
+}
+
+
+/* =========================================
+NAVBAR (MENU SUPERIOR)
+========================================= */
+
+.navbar{
+
+    position:fixed;      /* faz o menu ficar fixo no topo */
+
+    top:0;
+
+    width:100%;
+
+    display:flex;        /* ativa o flexbox */
+
+    justify-content:space-between;
+    /* separa logo da navegação */
+
+    align-items:center;  /* centraliza verticalmente */
+
+    padding:15px 40px;
+
+    background:#05010add; 
+    /* fundo com transparência */
+
+    backdrop-filter:blur(10px);
+    /* efeito de vidro */
+
+    border-bottom:1px solid #330066;
+
+    z-index:1000;
+
+}
+
+
+/* =========================================
+LOGO DO SITE
+========================================= */
+
+.logo{
+
+    color:#c084ff;
+
+    font-size:22px;
+
+    text-shadow:0 0 10px #9333ea;
+    /* efeito neon */
+
+}
+
+
+/* =========================================
+MENU DE NAVEGAÇÃO
+========================================= */
+
+nav{
+
+    display:flex;
+
+    gap:25px; /* espaço entre links */
+
+}
+
+
+/* LINKS DO MENU */
+
+nav a{
+
+    color:#c084ff;
+
+    text-decoration:none;
+
+    display:flex;
+
+    gap:6px;
+
+    transition:0.3s; /* animação suave */
+
+}
+
+
+/* HOVER DOS LINKS */
+
+nav a:hover{
+
+    text-shadow:0 0 10px #9333ea;
+
+    transform:translateY(-2px);
+    /* sobe 2px */
+
+}
+
+
+/* =========================================
+HERO SECTION (PRIMEIRA PARTE DO SITE)
+========================================= */
+
+.hero{
+
+    height:100vh; /* ocupa 100% da altura da tela */
+
+    display:flex;
+
+    flex-direction:column;
+    /* organiza elementos em coluna */
+
+    justify-content:center;
+    /* centraliza verticalmente */
+
+    align-items:center;
+    /* centraliza horizontalmente */
+
+    text-align:center;
+
+    gap:20px; /* espaço entre elementos */
+
+}
+
+
+/* TITULO PRINCIPAL */
+
+.hero h1{
+
+    font-size:70px;
+
+    color:#c084ff;
+
+    text-shadow:
+        0 0 10px #9333ea,
+        0 0 30px #9333ea,
+        0 0 60px #9333ea;
+    /* vários shadows para criar neon forte */
+
+}
+
+
+/* IMAGEM DO HERO */
+
+.hero-img{
+
+    width:200px;
+
+    display:block;
+
+    margin:auto;
+
+    animation:float 4s infinite ease-in-out;
+    /* animação flutuando */
+
+}
+
+
+/* =========================================
+ANIMAÇÃO FLOAT (flutuar)
+========================================= */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+/* =========================================
+SECTIONS GERAIS DO SITE
+========================================= */
+
+section{
+
+    padding:120px 20px;
+
+    max-width:1000px;
+
+    margin:auto;
+    /* centraliza a section */
+
+}
+
+
+/* TITULO DAS SEÇÕES */
+
+section h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#c084ff;
+
+    text-shadow:0 0 10px #9333ea;
+
+}
+
+
+/* =========================================
+SEÇÃO SOBRE
+========================================= */
+
+.sobre-container{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+    /* quebra linha se tela pequena */
+
+    justify-content:center;
+
+}
+
+
+/* IMAGEM DA SEÇÃO SOBRE */
+
+.sobre-container img{
+
+    width:220px;
+
+}
+
+
+/* =========================================
+GRID DE LINKS / PROJETOS
+========================================= */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    /* cria colunas responsivas */
+
+    gap:20px;
+
+}
+
+
+/* ITENS DA GRID */
+
+.grid a{
+
+    background:#0c0217;
+
+    border:1px solid #3c0070;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    color:#c084ff;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+
+/* HOVER GRID */
+
+.grid a:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 0 15px #9333ea;
+
+}
+
+
+/* =========================================
+CARDS (DESAFIOS)
+========================================= */
+
+.cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    justify-content:center;
+
+}
+
+
+/* CARD INDIVIDUAL */
+
+.card{
+
+    background:#0c0217;
+
+    border:1px solid #3c0070;
+
+    padding:30px;
+
+    width:250px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    transition:0.3s;
+
+}
+
+
+/* HOVER CARD */
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px #9333ea;
+
+}
+
+
+/* ICONE DO CARD */
+
+.card i{
+
+    font-size:30px;
+
+    color:#c084ff;
+
+    margin-bottom:10px;
+
+}
+
+
+/* =========================================
+SEÇÃO CONTATO
+========================================= */
+
+.contato{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    font-size:35px;
+
+}
+
+
+/* LINKS CONTATO */
+
+.contato a{
+
+    color:#c084ff;
+
+    transition:0.3s;
+
+}
+
+
+/* HOVER CONTATO */
+
+.contato a:hover{
+
+    text-shadow:0 0 10px #9333ea;
+
+    transform:scale(1.2);
+
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    width:600px;
+    height:600px;
+    background:radial-gradient(circle,#9333ea55,transparent);
+    top:-200px;
+    left:-200px;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+
+/* =========================================
+FOOTER
+========================================= */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    opacity:0.6;
+
+}
+
+@keyframes gradientBG{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+
+}

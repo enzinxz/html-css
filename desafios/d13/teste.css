@@ -1,0 +1,19 @@
+.animacao {
+  position: relative;
+  display: inline-block;
+}
+
+.animacao::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #9333ea;
+  transition: width 0.25s ease;
+}
+
+.animacao:hover::after {
+  width: 100%;
+}

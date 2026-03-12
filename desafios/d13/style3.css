@@ -1,0 +1,80 @@
+.neon{
+color:#6625a3;
+
+text-shadow:
+0 0 5px #9333ea,
+0 0 10px #9333ea,
+0 0 20px #9333ea,
+0 0 20px #9333ea;
+}
+
+
+.card{
+
+border:1px solid #9333ea;
+
+box-shadow:
+0 0 10px #9333ea,
+0 0 20px #9333ea;
+
+}
+
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.macaco {
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(45deg, #9333ea, #c084ff, #9333ea);
+
+}
+
+h1 {
+    color: #c084ff;
+    text-shadow: 0 0 5px #9333ea, 0 0 10px #9333ea, 0 0 20px #9333ea;
+}
+
+.navbar{
+
+position:fixed;
+top:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 40px;
+
+/* efeito vidro */
+
+background:rgba(5,1,10,0.6);
+
+backdrop-filter:blur(10px);
+
+border-bottom:1px solid rgba(192,132,255,0.3);
+
+}
+
+.animacao {
+    padding-bottom: 3px;
+}
