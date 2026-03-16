@@ -104,6 +104,7 @@ footer a:hover {
   text-decoration: underline;
   font-size: 22px;
   transition: 500ms;
+  text-shadow: #fff 0px 0px 10px;
 }
 
 nav a:hover {
