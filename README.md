@@ -12,3 +12,7 @@ Acesse meu projeto android
 <a href="https://enzinxz.github.io/html-css/desafios/d012/" target="_blank">
 Acesse meu projeto cordel
 </a> <br>
+
+<a href="https://enzinxz.github.io/projeto-cordel/" target="_blank">
+Acesse meu projeto cordel
+</a> <br>
