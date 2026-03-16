@@ -18,7 +18,6 @@ header h1 {
   font-weight: 400;
   padding: 60px;
   font-size: 10vw;
-
 }
 
 nav {
@@ -114,4 +113,3 @@ footer a:hover {
   transition: 500ms;
   text-shadow: #fff 0px 0px 10px;
 }
-
