@@ -12,13 +12,13 @@ header {
 header h1 {
   font-family: "Passion One", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-variant: small-caps;
   color: #fff;
   text-align: center;
   font-weight: 400;
-  font-style: normal;
   padding: 60px;
-  font-size: 90px;
+  font-size: 10vw;
+
 }
 
 nav {
@@ -36,12 +36,18 @@ nav a {
   padding-bottom: 40px;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  font-size: 22px;
+  transition: 500ms;
+}
+
 section p {
   font-family: "Sriracha", cursive;
   margin-top: 55px;
   margin-left: 30px;
   margin-bottom: 55px;
-  font-size: 32px;
+  font-size: 4.3vw;
 }
 
 #flortxt {
@@ -52,6 +58,7 @@ section p {
   background-color: rgba(0, 0, 0, 0.404);
   display: inline-block;
   padding: 10px;
+  border-radius: 10px;
 }
 
 #florimg {
@@ -83,6 +90,7 @@ section p {
   background-color: rgba(0, 0, 0, 0.404);
   display: inline-block;
   padding: 10px;
+  border-radius: 10px;
 }
 
 footer {
@@ -107,8 +115,3 @@ footer a:hover {
   text-shadow: #fff 0px 0px 10px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-  font-size: 22px;
-  transition: 500ms;
-}
