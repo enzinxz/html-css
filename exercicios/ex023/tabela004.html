@@ -19,12 +19,20 @@
         table {
             border-collapse: collapse;
             width: 600px;
+            padding-left: 200px;
+            margin-left: 170px;
+            background-color: white;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.397)
         }
 
         th, td {
             border: 1px solid gray;
             text-align: center;
             padding: 10px;
+        }
+
+        h1 {
+            text-align: center;
         }
     </style>
 </head>
@@ -36,14 +44,22 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">
+                    Total de pessoas
+                    <td>6</td>
+                </th>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Maria</td>
                 <td>Interestelar</td>
                 <td>Vingadores</td>
@@ -62,10 +78,10 @@
                 <td>Fnaf 2</td>
              </tr>
              <tr>
-                <th rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Enzo</td>
                 <td>Vingadores</td>
-                <td>Capitão América</td>
+                <td>Cs go2</td>
                 <td>Homem-Aranha</td>
             </tr>
             <tr>
