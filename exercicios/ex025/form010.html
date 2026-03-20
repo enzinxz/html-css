@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+        @keyframes gradient {
+            0%{background-position: 0% 50%;}
+            50%{background-position: 100% 50%;}
+            100%{background-position: 0% 50%;}
+        }
+      
+      
+      body {
+        
+        background: linear-gradient(135deg, #4e64c5, #764ba2);
+        width: 100vw;
+        height: 100vh;
+        background-attachment: fixed;
+        color: white;
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Idade</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <p>
+      <label for="iano">Em que ano você nasceu</label>
+      <input
+        type="number"
+        name="ano"
+        id="iano"
+        min="1950"
+        max="2026"
+        oninput="calcIdade()"
+      />
+    </p>
+
+    <p>
+      <label for="iidade">Sua idade é</label>
+      <output id="iidade">0</output>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Resetar" />
+    </p>
+
+    <script>
+      function calcIdade() {
+        let atual = new Date().getFullYear();
+        iidade.innerHTML = Number(atual) - Number(iano.value);
+      }
+    </script>
+
+    <h1>Exemplo de Número + Java</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <p>
+      <label for="inum">Número</label>
+      <input
+        type="range"
+        name="num"
+        id="inum"
+        min="0"
+        max="100"
+        value="50"
+        oninput="ival.innerHTML = Number(inum.value)"
+      />
+      <output id="ival">5</output>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Resetar" />
+    </p>
+
+    <h1>Exemplo de uma Mini Calculadora</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <p>
+      <label for="in1">Número 1</label>
+      <input
+        type="number"
+        name="n1"
+        id="in1"
+        min="0"
+        max="50"
+        required
+        oninput="isoma.innerHTML = Number(in1.value) * in2.value"
+      />
+    </p>
+    <p>
+      <label for="in2">Número 2</label>
+      <input
+        type="number"
+        name="n2"
+        id="in2"
+        min="0"
+        max="50"
+        required
+        oninput="isoma.innerHTML = Number(in1.value) * in2.value"
+      />
+    </p>
+
+    <p>
+      <label for="isoma">Some</label>
+      <output name="soma" id="isoma">0</output>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar" />
+    </p>
+  </body>
+</html>
