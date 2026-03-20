@@ -1,11 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      p {
+        padding-bottom: 5px;
+        background-color: rgb(241, 241, 241);
+        font-weight: bold;
+        font-size: 19px;
+        border-radius: 5px;
+      }
+
+      fieldset {
+        border-radius: 10px;
+        background-color: rgb(221, 220, 220);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
+        width: 730px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      .botao {
+        text-align: right;
+        padding-right: 20px;
+        
+        
+      }
+      
+
+
+      legend {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Sexo</legend>
+        <p>
+          <input type="radio" name="sexo" value="M" id="isxmas" />
+          <label for="isxmas">Masculino</label> <br />
+        </p>
+
+        <p>
+          <input type="radio" name="sexo" value="F" id="isxfem" />
+          <label for="isxfem">Feminino</label>
+        </p>
+        
+      </fieldset>
+      <hr />
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <p>
+          <label for="iesfut"
+            ><input type="checkbox" name="esfut" id="iesfut" /> Futebol <br
+          /></label>
+        </p>
+        <p>
+          <label for="iesvly"
+            ><input type="checkbox" name="esvly" id="iesvly" /> Voley <br
+          /></label>
+        </p>
+        <p>
+          <label for="iesbas"
+            ><input type="checkbox" name="esbas" id="iesbas" /> Basquete <br
+          /></label>
+        </p>
+        <p>
+          <label for="iescrr"
+            ><input type="checkbox" name="escrr" id="iescrr" /> Corrida <br
+          /></label>
+        </p>
+        <p>
+          <label for="iesbht"
+            ><input type="checkbox" name="esbht" id="iesbht" /> Beach tennis
+            <br
+          /></label>
+        </p>
+      </fieldset>
+      <div class="botao">
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
 </html>
