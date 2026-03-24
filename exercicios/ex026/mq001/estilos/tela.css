@@ -35,12 +35,25 @@ menu li {
     color: white;
     display: inline-block;
     padding: 10px;
+    border-radius: 4px;
+}
+
+menu > ul > li:hover {
+  background-color: rgb(34, 34, 34);
+  transition: 300ms;
+  box-shadow: 3px 3px 3px white;
+  transform: translateY(-2px);
+  cursor: pointer;
 }
 
 article {
     width: 600px;
     display: block;
     margin: auto;
+    background-color: rgb(206, 205, 205);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 article > h2 {
@@ -51,4 +64,6 @@ article > h2 {
 article > p {
     text-align: justify;
     line-height: 25px;
+    margin-bottom: 20px;
+    text-indent: 25px;
 }

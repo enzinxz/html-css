@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: rgb(151, 151, 151);
+}
+
+header >     h1 {
+      font-family: 'Anton', Impact, sans-serif;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-size: 42px;
+      letter-spacing: 3px;
+      text-shadow:
+        0 0 5px #00eaff,
+        0 0 10px #00eaff,
+        0 0 20px #00eaff;
+    }
+
+header > h1:hover {
+  text-shadow:
+    0 0 10px #00eaff,
+    0 0 20px #00eaff,
+    0 0 40px #00eaff;
+  transition: 0.3s;
+}
+
+i#imenu {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+i#imenu:hover {
+    background-color: rgb(180, 180, 180);
+    transform: scale(1.1);
+    transition: 300ms;
+    cursor: pointer;
+}
+
+menu {
+    display: none;  
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(186, 219, 247);
+    background-color: rgb(94, 94, 94);
+    border-top: 2PX solid gray;
+    font-weight: bold;
+}
+
+menu a:hover {
+    background-color: rgb(121, 121, 121);
+    transition: 400ms;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+main h2 {
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 30px #00eaff;
+    background-color: #00eaff13;
+    width: 170px;
+    color: rgb(64, 75, 85);
+    border-radius: 5px;
+}
+
+main p {
+    padding-bottom: 16px;
+    text-indent: 10px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+#itens {
+    display: none;
+    transform-origin: top;
+}
+
+/* abrindo */
+#itens.open {
+    animation: menuOpen 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* fechando */
+#itens.closing {
+    animation: menuClose 0.35s ease forwards;
+}
+
+/* animação abrir */
+@keyframes menuOpen {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.8) translateY(-10px);
+    }
+    60% {
+        opacity: 1;
+        transform: scaleY(1.05) translateY(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1) translateY(0);
+    }
+}
+
+/* animação fechar */
+@keyframes menuClose {
+    0% {
+        opacity: 1;
+        transform: scaleY(1) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(0.8) translateY(-10px);
+    }
+}

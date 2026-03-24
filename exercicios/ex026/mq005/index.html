@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Tecnologia em Alta</h1>
+        <i id="imenu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Destaques</a></li>
+                <li><a href="#">Gazin tech</a></li>
+                <li><a href="#">Tecnologias</a></li>
+                <li><a href="#">Desenvolvimento</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Futuro digital</h2>
+            <p>A tecnologia está presente em praticamente todos os aspectos do nosso dia a dia, desde o momento em que acordamos até a hora de dormir. Dispositivos como smartphones, computadores e assistentes virtuais facilitam tarefas simples e complexas. Além disso, a internet permite acesso rápido à informação, comunicação instantânea e diversas formas de entretenimento. Com o avanço constante da tecnologia, novas oportunidades surgem, exigindo que as pessoas estejam sempre aprendendo e se adaptando às mudanças do mundo digital.</p>
+
+            <p>Aprender programação pode abrir muitas portas no mercado de trabalho e também desenvolver o raciocínio lógico. Linguagens como HTML e CSS são ideais para quem está começando, pois permitem criar sites e entender a estrutura da web. Com prática e dedicação, é possível evoluir para linguagens mais avançadas, como JavaScript. Além disso, programar estimula a criatividade, já que você pode transformar ideias em projetos reais, criando soluções úteis e até mesmo inovadoras para problemas do cotidiano.</p>
+
+            <p>A organização é uma habilidade importante tanto nos estudos quanto na vida pessoal. Manter um ambiente limpo e um planejamento bem definido ajuda a aumentar a produtividade e reduzir o estresse. Criar rotinas, estabelecer metas e utilizar ferramentas de organização são estratégias eficientes para alcançar melhores resultados. Pequenas mudanças no dia a dia podem fazer grande diferença, contribuindo para um desenvolvimento mais equilibrado e facilitando o alcance de objetivos a curto e longo prazo.</p>
+        </article>
+    </main>
+    <script>
+function clickMenu() {
+    const itens = document.getElementById('itens')
+
+    if (itens.classList.contains('open')) {
+        itens.classList.remove('open')
+        itens.classList.add('closing')
+
+        setTimeout(() => {
+            itens.style.display = 'none'
+            itens.classList.remove('closing')
+        }, 400)
+    } else {
+        itens.style.display = 'block'
+        itens.classList.add('open')
+    }
+}
+    </script>
+</body>
+</html>
