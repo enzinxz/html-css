@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 900px) {
+ i#imenu {
+    display: none;
+ }
+
+ menu#itens {
+    display: block;
+ }
+}
+
+menu > ul > li {
+    display: inline-block;
+}
+
+menu a {
+    color: white;
+    padding: 10px;
+}
+
+main {
+    width: 600;
+}
+

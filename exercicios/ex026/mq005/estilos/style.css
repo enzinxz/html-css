@@ -37,7 +37,7 @@ header > h1:hover {
 
 i#imenu {
     background-color: rgb(71, 71, 71);
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
     text-align: center;
     padding: 10px;

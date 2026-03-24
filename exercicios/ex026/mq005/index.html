@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Tecnologia em Alta</h1>
         <i id="imenu" class="fa-solid fa-bars" onclick="clickMenu()"></i>
@@ -33,6 +34,14 @@
         </article>
     </main>
     <script>
+ function mudouTamanho () {
+    if (window.innerWidth >= 900) {
+    itens.style.display = 'block'
+ } else {
+    itens.style.display = 'none'
+ }
+ }
+
 function clickMenu() {
     const itens = document.getElementById('itens')
 
@@ -51,4 +60,4 @@ function clickMenu() {
 }
     </script>
 </body>
-</html>
+</html> 
