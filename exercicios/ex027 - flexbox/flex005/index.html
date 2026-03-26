@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box centralizado</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, rgb(159, 214, 233), lightblue, rgb(189, 221, 231));
+            background-attachment: fixed;
+        }
+
+        main {
+            background-image: linear-gradient(to bottom, rgb(159, 214, 233), lightblue, rgb(189, 221, 231));
+            height: 90vh;
+            width: 100vw;
+            
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        section {
+            background-color: lightcyan;
+            height: 200px;
+            width: 200px;
+            box-shadow: 0px 0px 25px rgb(226, 252, 252);
+            border-radius: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            
+        }
+
+        section  h1 {
+            margin-top: 20px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Pai</h1>
+    <main>
+        <section>
+            <h1>Filho</h1>
+        </section>
+    </main>
+</body>
+</html>
