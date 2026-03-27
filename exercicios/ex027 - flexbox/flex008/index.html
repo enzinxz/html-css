@@ -5,51 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexible box</title>
     <style>
-      div.container {
-        background-color: slategray;
+        div.container {
+          background-color: slategray;
 
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: stretch;
+          height: 400px;
+          
+
+        }
+
+        div.item {
+          background-color: lightskyblue;
+          border: 1px solid black;
+
+          padding: 28.7px;
+          
+        }
+
+      div#i1 {
+        align-self: auto;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        height: 500px;
-        align-items: stretch;
-        border-radius: 10px;
-        
-        
+        align-items: center;
       }
-
-      div.item {
-        background-color: lightskyblue;
-        border: 1px solid black;
-        text-align: center;
-        padding: 30px;
-        border-radius: 10px;
-        margin: 5px;
+      div#i2 {
+        align-self: center;
       }
-
-    div#i1 {
-        order: 0;
-    }
-    div#i2 {
-        order: -2;
-    }
-    div#i3 {
-        order: 4;
-    }
-    div#i4 {
-        order: 8;
-    }
-    div#i5 {
-        order: 2;
-    }
-    div#i6 {
-        order: 0;
-    }
-    div#i7 {
-        order: -4;
-    }
-
-    
+      div#i3 {
+        align-self: flex-end;
+      }
+      div#i4 {
+        align-self:stretch;
+        display: flex;
+        align-items: center;
+      }
+      div#i5 {
+        align-self: center;
+      }
+      div#i6 {
+        align-self: flex-end;
+      }
+      div#i7 {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+      }
+      div#i8 {
+        align-self: center;
+      }
+      div#i9 {
+        align-self: flex-end;
+      }
     </style>
   </head>
   <body>
@@ -62,6 +69,8 @@
         <div class="item" id="i5">E</div>
         <div class="item" id="i6">F</div>
         <div class="item" id="i7">G</div>
+        <div class="item" id="i8">H</div>
+        <div class="item" id="i9">I</div>
       </div>
     </div>
   </body>
