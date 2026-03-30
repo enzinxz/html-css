@@ -76,16 +76,3 @@ main p {
     text-align: justify;
 }
 
-footer {
-    display: flex;
-    align-items: end;
-    height: 60vh;
-}
-
-div p {
-    background-color: rgb(73, 73, 73);
-    text-align: center;
-    color: white;
-    width: 100vw;
-}
-
