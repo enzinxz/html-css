@@ -6,6 +6,7 @@ body {
 
 .container {
     display: grid;
+    gap: 5px;
     grid-template-rows: repeat(3, 100px);
     grid-template-columns: repeat(4,1fr);
     box-shadow: 10px 10px 10px rgba(107, 70, 0, 0.418);
@@ -19,8 +20,9 @@ body {
     grid-column-start: 1 ;
     grid-column-end: -1;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .caixa2 {
@@ -31,6 +33,7 @@ body {
     grid-column-end: 3;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .caixa3 {
@@ -41,4 +44,20 @@ body {
     grid-column-end: 5;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+div a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    background-color: rgb(214, 187, 153);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div a:hover {
+    text-decoration: underline;
+    transition: .4s;
+    background-color: rgb(223, 195, 163);
 }
